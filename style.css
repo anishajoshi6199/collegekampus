@@ -497,7 +497,8 @@ p{
  }
 
 
- .demo{
+ .demo{ 
+   display:inline-block;
    text-align: center;
    background-color: #fff;
    width: 50%;
@@ -505,16 +506,181 @@ p{
    margin-top: 5%;
    margin-bottom: 5%;
    border: black 1.8px solid;
-   padding-top: 50px;
+   padding-top: 40px;
    border-radius: 20px;
  }
 
  .demo h1{
-   padding-bottom: 30px;
+   padding-bottom: 25px;
    font-size: 38px;
+ }
+
+ .demo p{
+   display: inline-block;
+   justify-content: center;
+   align-items: center;
+   font-size: 18px;
+   padding-bottom: 25px;
  }
 
 
 .demo .hero-btn{
    margin-bottom: 25px;
 }
+
+
+/*---------------------------- integration page----------------------------*/
+
+.inte-content{
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   margin-top: 25px ;
+}
+
+.inte-item-1 h1{
+  font-size: 60px;
+}
+
+.inte-item-1 strong{
+   color: green;
+}
+
+.inte-item-1 p{
+   font-size: 22px;
+}
+
+/* integrations */
+
+.integration{
+   background-color: skyblue;
+   height: 1500px;
+}
+
+.integrate{
+   text-align: center;
+   padding-top: 60px;
+   padding-bottom: 20px;
+ 
+}
+
+.integrate-int{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 30px;
+
+}
+
+
+.integrate-int-1{
+   background-color: #fff;
+   padding: 5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
+
+
+.integrate-int-2{
+   background-color: #fff;
+   padding: 5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+ 
+}
+
+
+
+.integrate-int-3{
+   background-color: #fff;
+   padding: 5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
+.integrate-intt{
+   
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 60px;
+   
+}
+
+
+.integrate-int-4{
+   background-color: #fff;
+   padding: 5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;  
+    margin: 5px 5px 5px 5px;
+
+}
+
+
+.integrate-int-5{
+   background-color: #fff;
+   padding: 5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
+
+.integrate-int-6{
+   background-color: #fff;
+   padding:5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
+
+.integrate-int-7{
+   background-color: #fff;
+   padding:5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
+
+
+.integrate-int-8{
+   background-color: #fff;
+   padding:5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
+
+
+.integrate-int-9{
+   background-color: #fff;
+   padding:5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
