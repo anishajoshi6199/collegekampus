@@ -1,66 +1,93 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 
 /* navbar */
 
-
-nav{
-    display: flex;
-    padding: 2% 2%;
-    justify-content: space-between;
-    align-items: center;
-    height: 33px;
+.menu-bar-1{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 50px;
 
 }
+.menu-bar{
+   background: white;
+   text-align: right;
+   padding-right: 10px;
+}
 
-nav img{
-    width: 180px;
- 
+
+.menu-bar ul{
+   display: inline-flex;
+   list-style: none;
+   color: black;
+}
+
+.menu-bar ul li{
+   width: 100px;
+   margin: 15px;
+   padding: 10px;
+}
+
+.menu-bar ul li a{
+   text-decoration: none;
+   color: black;
+   font-size: 22px;
+}
+
+
+.sub-menu{
+   display: none;
+}
+
+ .menu-bar ul li:hover .sub-menu{
+   display:block;
+   position: absolute;
+   margin-top: 10px;
+   margin-left: -30px;
  }
- 
- .nav-links ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 8px 10px ;
-    position: relative;
-    font-size: 20px;
-}
-
-.hero-btn{
-    display: inline-block;
-    text-decoration: none;
-    color:black;
-    border: 1px solid black;
-    padding: 16px 34px;
-    font-size: 15px;
-    cursor: pointer;
-    background: gold;
-    border-radius: 30px;
-
-}
 
 
-/* content */
+ .menu-bar ul li:hover .sub-menu ul{
+   display: block;
+   margin: 10px;
+ }
+
+ .menu-bar ul li:hover .sub-menu ul li{
+   width: 300px;
+   padding: 10px;
+   border-radius: 5px;
+   text-align: left;
+   font-size: 20px;
+   border: 1px solid black;
+ }
+
+
+/* ----------------------------- */
 
 
 .fcontent{
  align-items: center;
- justify-content: center;
+ justify-content: space-around;
  display: flex;
- padding-bottom: 70px;
- margin-top: 2px;
+ margin-top: 90px;
+
 }
 
 .fcontent .fcontent-1{
     padding: 10px 6px;
     padding-left: 30px;
+    padding-bottom: 50px;
+    padding-right: 20px;
 }
 
 .fcontent .fcontent-1 strong{
     color: green;
+    padding-bottom: 40px;
 }
 
 .fcontent-1 h1{
@@ -80,12 +107,12 @@ nav img{
 
 .fcontent-item{
         align-items: center;
-        justify-content:space-evenly;
+        justify-content:space-around;
         display: flex;
  }
 
- .fcontent-item .hero-btn-1{
-     background-color: white;
+ .fcontent-item .hero-btn{
+     background-color:gold;
      display: inline-block;
     text-decoration: none;
     color:black;
@@ -382,6 +409,10 @@ height: 300px;
 border:orange 5px solid;
 }
 
+.fa-solid{
+   color: black;
+}
+
 .row-1{
     margin-top:-10;
     display: flex;
@@ -554,7 +585,7 @@ p{
 
 .integration{
    background-color: skyblue;
-   height: 1500px;
+   height: 1550px;
 }
 
 .integrate{
@@ -684,3 +715,355 @@ p{
 
 }
 
+
+
+
+.integrate-int-10{
+   background-color: #fff;
+   padding:5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
+
+
+.integrate-int-11{
+   background-color: #fff;
+   padding:5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
+
+
+.integrate-int-12{
+   background-color: #fff;
+   padding:5px 5px 5px 5px ;
+   border: 2px solid black;
+   border-radius: 5%;
+   text-align: center;
+   margin: 5px 5px 5px 5px;
+
+}
+
+
+/*------------------------------------------------- Pricing Page------------------------------------------- */
+
+
+.pricing-1{
+   text-align: center;
+   
+}
+
+.pricing-1 strong{
+   color: green;
+}
+
+
+/* ----------------- three-boxese --------------- */
+
+.first-box{
+  border: 3px solid orangered;
+  background-color: rgb(247, 227, 216);
+  margin: 40px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  width: 450px;
+  text-align: center;
+  height: 850px;
+  border-radius: 40px;
+
+}
+
+.first-box h2{
+   color: blue;
+   font-size: 40px;
+}
+
+
+.second-box{
+   border: 3px solid orangered;
+   background-color: rgb(247, 227, 226);
+   margin: 40px;
+   padding-left: 30px;
+   padding-top: 30px;
+   padding-right: 30px;
+   width: 450px;
+   text-align: center;
+   height: 850px;
+   border-radius: 40px;
+ 
+ }
+ 
+ .second-box h2{
+    color: blue;
+    font-size: 40px;
+ }
+
+ .boxese{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ .ins{
+   text-align: center;
+   font-size: 18px;
+   color: rgb(93, 93, 193);
+ }
+
+ .stores-1 h1{
+   text-align: center;
+ }
+
+ .stores-2 img{
+   align-items: center;
+   padding-bottom: 30px;
+   padding-top: 30px;
+   padding-left: 160px;
+ }
+
+
+ .fcontitemm{
+   display: flex;
+   
+    justify-content:center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    margin-bottom: 120px;
+    background-color: rgb(215, 235, 242);
+    padding-right: 18px;
+    padding-left: 18px;
+ }
+ 
+ .imgg{
+   width: 50%;
+   padding: 8px;
+   
+}
+.fcontitem{
+text-align: center;
+padding-bottom: 34px;
+font-size: 28px;
+padding-top: 80px;
+
+}
+
+.fcontitem strong{
+   color: green;
+   font-size: 20px;
+}
+
+
+
+
+/*------------------------- about-us page -----------------------*/
+
+.exchanged{
+   background-color: green;
+   padding: 8px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.exchanged-1{
+   color: #fff;
+   text-align: left;
+   padding-left: 20px;
+   padding-top: 20px;
+}
+
+.exchanged-1  p{
+   color: #fff;
+}
+
+/* -------------------- */
+.story{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 70px;
+}
+
+.story-1 p{
+   font-size: 20px;
+}
+
+.story-1 h1{
+   font-size: 58px;
+}
+/* ----------------------------------- */
+
+.mission{
+   display: flex;
+   justify-content: space-around;
+   align-items: center ;
+   padding: 60px;
+}
+
+.mission-1{
+   background-color:rgb(150, 150, 248);
+   padding: 35px;
+   font-size: 30px;
+   border-radius: 20px;
+   width: 70vh;
+   height: 35vh;
+   text-align: center;
+}
+
+
+
+.mission-2{
+   background-color:rgb(244, 193, 99);
+   padding: 35px;
+   font-size: 30px;
+   border-radius: 20px;
+   width: 70vh;
+   height: 35vh;
+   text-align: center;
+}
+
+.values{
+   text-align: center;
+}
+
+.values h4{
+   font-size: 37px;
+}
+
+.values h1{
+   font-size: 60px ;
+}
+
+.values h2{
+   font-size: 28px;
+}
+
+.values strong{
+   color: green;
+}
+
+
+/*-------------------- chat-widget page ---------------------*/
+
+
+
+.widget{
+   align-items: center;
+   justify-content: center;
+   display: flex;
+   padding-bottom: 70px;
+   margin-top: 2px;
+  }
+  
+  .widget .fcontent-1{
+      padding: 10px 6px;
+      padding-left: 30px;
+  }
+  
+  .widget .fcontent-1 strong{
+      color: green;
+  }
+  
+  .fcontent-1 h1{
+      font-size: 45px;
+      padding-bottom: 5px;
+  }
+  
+
+  
+  .fcontent-1 p{
+      font-size: 20px;
+      padding-bottom: 5px;
+  }
+  
+  .widget-item{
+          align-items: center;
+          justify-content:space-evenly;
+          display: flex;
+   }
+  
+   .fcontent-item .hero-btn-1{
+       background-color: white;
+       display: inline-block;
+      text-decoration: none;
+      color:black;
+      border: 1px solid black;
+      padding: 16px 34px;
+      font-size: 15px;
+      cursor: pointer;
+      border-radius: 30px;
+  
+   }
+
+   /* ---------------- */
+     
+  
+   .entry-points{
+      text-align: center;
+      margin-top: 50px;
+   }
+   .three-points{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 35px;
+      margin-bottom: 40px;
+   }
+
+   .points-1{
+      border: 2px solid black;
+      text-align: center;
+      padding: 10px;
+      border-radius: 30px;
+   }
+
+   /* ------------- */
+
+   .critical{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 8%;
+      margin-bottom: 8px;
+      padding: 30px;
+   }
+
+   /* --------------------------- */
+
+   .purchase{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 5px;
+      margin-bottom: 8px;
+      padding: 40px;
+   }
+
+   /* ------------------ */
+
+   .post-purchase{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 5px;
+      margin-bottom: 8px;
+      padding: 40px;
+   }
+
+    .course-widget{
+      width: 80%;
+      margin: auto;
+      justify-content:space-around ;
+      text-align: center;
+      padding-top: 100px; ;
+  }
