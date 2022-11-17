@@ -5,7 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
     <title>CollegeKampus Website</title>
     <link rel="stylesheet" href="./style.css" />
     <script
@@ -14,41 +19,49 @@
     ></script>
   </head>
   <body>
-    <section class="header">
       <!----------------- novbar ------------------->
 
-      <section class="header">
+    
+      <nav class="navBar">
+        <div class="logo">
+          <img src="./image/logo.webp" alt="img" height="50px" />
+        </div>
   
-        <div class="menu-bar-1">
-          
-          <div class="image">
-          <img src="./image/logo.webp" alt="img" height="50px">
-          </div>
-          <div class="menu-bar">
-           <ul>
-               <li><a href="./index.html"> Home</a></li>
-               <li><a href="#">solutions</a>
+        <label for="btn" class="icon">
+          <span class="fa fa-bars"></span>
+        </label>
+        <input type="checkbox" id="btn" />
   
-                  <div class="sub-menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
   
-                       <ul>
-                           <li><a href="./index.html">WhatsApp E-commerce</a></li>
-                           <li><a href="#">WhatsApp CRM</a></li>
-                           <li><a href="#">WhatsApp Automation</a></li>
-                           <li><a href="./chat-widget.html">WhatsApp Chat Widgets</a></li>
-                       </ul>
+          <label for="btn-1" class="show">Solutions+ </label>
   
-                  </div>
+          <li>
+            <a href="#">Solutions</a>
+            <input type="checkbox" id="btn-1" />
   
+            <ul>
+              <li>
+                <a class="sol-option" href="./index.html">WhatsApp Commerce</a>
               </li>
-               <li><a href="./integrations.html"> Integration</a></li>
-               <li><a href="./Pricing.html">Pricing</a></li>
-               <li><a href="./about-us.html"> AboutUs</a></li>
-               <li><a href="#">Login</a></li>
-           </ul>
-       </div>
-       </div>
-       <hr>
+              <li><a class="sol-option" href="./CRM.html">WhatsApp CRM</a></li>
+              <li><a class="sol-option" href="./Automation.html">WhatsApp Automation</a></li>
+              <li>
+                <a class="sol-option" href="./chat-widget.html"
+                  >WhatsApp Chat Widgets</a
+                >
+              </li>
+            </ul>
+          </li>
+  
+          <li><a href="./integrations.html">Integrations</a></li>
+          <li><a href="./Pricing.html">Pricing</a></li>
+          <li><a href="./about-us.html">AboutUs</a></li>
+          <li><a href="#">Login</a></li>
+        </ul>
+      </nav>
+      <hr />
 <!-- ------------------------------ -->
       <div class="exchanged">
         
@@ -63,9 +76,6 @@
               <a href="" class="hero-btn"
                 ><strong>Try Interakt For Free</strong></a
               >
-            </div>
-            <div class="fcontent-1-1-2">
-              <a href="" class="hero-btn-1"><strong>Get a Live Demo</strong></a>
             </div>
           </div>
         </div>
@@ -104,9 +114,6 @@
         </div>
       </div>
 
-      <!-- ----------------------------------------- - -->
-
-      <!--  ------------------------------------------>
 
   
        
@@ -119,7 +126,7 @@
           <h2>Learn More About WhatsApp Catalogs & Carts</h2>
         </div>
         <div class="cataloge-2">
-          <div data-aos="zoom-in" offset: 400, duration: 1500 class="cataloge2-1">
+          <div class="cataloge2-1">
             <img src="image/Catalogs-1536x864.png" alt="img" height="200px" />
             <h3>
               WhatsApp Single & Multi<br />
@@ -127,7 +134,7 @@
               conversation
             </h3>
           </div>
-          <div data-aos="zoom-in" offset: 400, duration: 1500 class="cataloge2-1-1">
+          <div  class="cataloge2-1-1">
             <img
               src="./image/E-commerce-1536x864.png"
               alt="img"
@@ -138,7 +145,7 @@
               for E-commerce Businesses
             </h3>
           </div>
-          <div data-aos="zoom-in" offset: 400, duration: 1500  class="cataloge2-1-2">
+          <div  class="cataloge2-1-2">
             <img src="./image/SMBs-1536x864.png" alt="img" height="200px" />
             <h3>
               WhatsApp’s Latest Feature for <br />SMBs, Catalog Messages:
@@ -148,22 +155,144 @@
           </div>
         </div>
 
-        <div   class="demo">
-          <h1>Get Started With Interakt Today</h1>
-          <strong>
-            <p>• Drive Sales & Customer Experience</p>
-            <p>• No Set-up Costs</p>
-            <p>• No Surcharge on Notifications</p>
-          </strong>
-          <a href="" class="hero-btn"><strong>Try Interakt For Free</strong></a>
-          <br />
-          <h1><strong>Got More Questions?</strong></h1>
-          <a href="" class="hero-btn"><strong>Get a Live Demo</strong></a>
+      <!-- footer -->
+
+      
+    <div class="footer">
+      <div class="container">
+        <div class="rows">
+          <div class="rows11">
+            <div class="rowOne col-lg-5 col-md-6">
+              <div class="wpNumberMain">
+                <img src="./image/logo.webp" alt="" />
+                <p>Sign up to recieve the latest updates</p>
+                <div class="wpNumber">
+                  <input type="text" class="wpNumberInput" placeholder="Your Whats app Number">
+                  <button>Submit</button>
+                </div>
+              </div>
+              <div>
+                <div class="footerLogo2">
+                  <img src="./image/lhpp.jpeg" alt="" />
+                </div>
+                <div class="footerLogo3">
+                  <img src="./image/footer_logo.webp" alt="" />
+                </div>
+                <div class="building">
+                  Interakt is a Jio Haptik Product
+                  <br />
+                  Building Intelligent Virtual Assistants for Businesses
+                </div>
+              </div>
+            </div>
+
+            <div class="rowTwo col-lg-2 col-md-6">
+              <div>
+                <h4 class="widget-title">Interakt</h4>
+                <ul class="widget-title-options">
+                  <li>
+                    <a href="#">Get a Live Demo</a>
+                  </li>
+                  <li>
+                    <a href="#">About Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Partner with Us</a>
+                  </li>
+                  <li>
+                    <a href="#">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <a href="#">Terms & Conditions</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="rows22">
+            <div class="rowThree col-lg-2 col-md-6">
+              <div>
+                <h4 class="widget-title">Quick Help Links</h4>
+                <ul class="widget-title-options">
+                  <li>
+                    <a href="#">Blogs</a>
+                  </li>
+                  <li>
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li>
+                    <a href="#">FAQ's</a>
+                  </li>
+                  <li>
+                    <a href="#">Case Studies</a>
+                  </li>
+                  <li>
+                    <a href="#">Resource Center</a>
+                  </li>
+                  <li>
+                    <a href="#">Interakt Academy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="findUsOn">
+                <h4 class="text-left widget-title">Find Us On</h4>
+              </div>
+            </div>
+
+            <div class="rowFour col-lg-3 col-md-6 text-center">
+              <div>
+                <h4 class="text-center widget-title">Download</h4>
+              </div>
+              <div class="footerIconImg">
+                <img src="./image/footer_icon1.webp" alt="" />
+                <img src="./image/footer_icon2.webp" alt="" />
+                <img src="./image/footer_icon3.webp" alt="" />
+              </div>
+              <div>
+                <h4 class="text-center widget-title connectWithUs">
+                  Connect with us
+                </h4>
+              </div>
+              <div class="barCode">
+                <img src="./image/barcode.webp" alt="" />
+              </div>
+              <div class="socialLogoImg">
+                <img src="./image/social1.webp" alt="" />
+                <img src="./image/social2.webp" alt="" />
+                <img src="./image/social3.webp" alt="" />
+                <img src="./image/social4.webp" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <br>
-      <br>
+      <div class="footer-bottom mt-5">
+        <div class="col-md-12 footer-country-contaier">
+          <div class="footer-country">
+            <ul>
+              <li>India</li>
+              <li>|</li>
+              <li>Singapore</li>
+              <li>|</li>
+              <li>Malaysia</li>
+              <li>|</li>
+              <li>UAE</li>
+              <li>|</li>
+              <li>Philippines</li>
+              <li>|</li>
+              <li>Africa</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyright col-md-12 mt-3 text-center">
+          Copyright © Jio Haptik Technologies Limited 2022 | All rights reserved
+        </div>
+      </div>
+    </div>
 
 
       <!-- our Aos data -->
